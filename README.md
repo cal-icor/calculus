@@ -1,2 +1,2 @@
 # calculus
-Intro calculus lessons in Jupytert
+Intro calculus lessons in Jupyter
