@@ -4,6 +4,8 @@
 
 - [Icebreaker.ipynb](https://laney.cloudbank.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcal-icor%2Fcalculus&urlpath=lab%2Ftree%2Fcalculus%2FIcebreaker.ipynb&branch=main)   Click here to open this notebook on the Laney Jupyterhub ( Jan 2025)
 - [graph_limits.ipynb](https://laney.cloudbank.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcal-icor%2Fcalculus&urlpath=lab%2Ftree%2Fcalculus%2Fgraph_limits.ipynb&branch=main)
+- [Table_Limits.ipynb](https://laney.cloudbank.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcal-icor%2Fcalculus&urlpath=lab%2Ftree%2Fcalculus%2FTable_Limits.ipynb&branch=main)
+
   
 ## Jupyter Shortcuts
 
