@@ -78,6 +78,11 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Jupyter Book and AnyWidget build output
+_build/
+content/_widgets/
+demos/node_modules/
+
 # IPython
 profile_default/
 ipython_config.py

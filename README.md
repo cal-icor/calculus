@@ -2,6 +2,29 @@
 
 [![Jupyter Badge](https://img.shields.io/badge/jupyter-%23777777.svg?style=plastic&logo=jupyter)](https://laney.cloudbank.2i2c.cloud/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcal-icor%2Fcalculus&urlpath=lab%2Ftree%2Fcalculus%2Ficebreaker%2FIcebreaker.ipynb&branch=main)
 
+## Interactive Jupyter Book
+
+The course book uses Jupyter Book v2 (MyST) and kernel-free AnyWidget
+activities. Chapter content is in `content/`; widget source is in `demos/`.
+
+### One-time setup
+
+```powershell
+python -m pip install -r requirements-build.txt
+npm ci --prefix demos
+```
+
+### Build and preview
+
+```powershell
+npm run build --prefix demos
+jupyter book start
+```
+
+The widget build must run before the book build. While editing a widget, run
+`npm run watch --prefix demos` in a second terminal. Run the widget tests with
+`npm test --prefix demos`.
+
 ## Notebooks
 
 Click any notebook name below to open it on the Laney JupyterHub.

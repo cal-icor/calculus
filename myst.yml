@@ -1,0 +1,41 @@
+version: 1
+
+project:
+  title: Calculus Course Notes
+  description: Interactive notes and activities for Calculus I and Calculus II
+  github: cal-icor/calculus
+  license: MIT
+  jupyter:
+    kernelName: python3
+  exclude:
+    - README.md
+    - calculus-calendar-only.md
+    - demos
+  toc:
+    - file: content/index.md
+    - title: Calculus I
+      children:
+        - file: content/Chapter_00/00_Precalculus_Readiness.md
+          children:
+            - file: content/Chapter_00/04_Mathematical_Statements.md
+            - file: content/Chapter_00/01_Algebra_Review.md
+            - file: content/Chapter_00/02_Unit_Circle.md
+            - file: content/Chapter_00/03_Exponents_and_Logarithms.md
+            - file: content/Chapter_00/05_Readiness_Check.md
+    - title: Calculus II
+      children:
+        - file: content/calculus-ii.md
+
+site:
+  template: https://github.com/jupyter-book/myst-theme/releases/download/myst-to-react%401.4.1/book-theme.zip
+  nav:
+    - title: Calculus I
+      url: /precalculus-readiness
+    - title: Calculus II
+      url: /calculus-ii
+  options:
+    logo_text: Calculus Course Notes
+    hide_authors: true
+    hide_myst_branding: true
+    hide_outline: false
+    style: style.css

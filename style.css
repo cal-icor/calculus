@@ -1,0 +1,108 @@
+:root {
+  --calculus-blue: #1557a0;
+  --calculus-blue-deep: #0b315f;
+  --calculus-teal: #08756b;
+  --calculus-teal-deep: #06453f;
+  --calculus-focus: #f0a202;
+}
+
+.course-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem 2.5rem;
+}
+
+.course-tabs > .myst-card {
+  position: relative;
+  display: grid;
+  min-height: 12rem;
+  align-content: end;
+  gap: 0.55rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 0;
+  border-radius: 0.75rem;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0.75rem 1.75rem rgb(15 35 65 / 16%);
+  transition:
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out;
+}
+
+.course-tabs > .myst-card::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, transparent 50%, rgb(255 255 255 / 10%)),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 2rem,
+      rgb(255 255 255 / 5%) 2rem,
+      rgb(255 255 255 / 5%) calc(2rem + 1px)
+    );
+  content: "";
+  pointer-events: none;
+}
+
+.course-tabs > .myst-card:first-child {
+  background: var(--calculus-blue);
+}
+
+.course-tabs > .myst-card:last-child {
+  background: var(--calculus-teal);
+}
+
+.course-tabs > .myst-card:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2.25rem rgb(15 35 65 / 24%);
+}
+
+.course-tabs > .myst-card:focus-visible {
+  outline: 0.25rem solid var(--calculus-focus);
+  outline-offset: 0.2rem;
+}
+
+.course-tabs > .myst-card > div:first-child {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.course-tabs > .myst-card > div:last-child,
+.course-tabs > .myst-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 32rem;
+  color: rgb(255 255 255 / 92%);
+  line-height: 1.45;
+}
+
+::selection {
+  color: #071a31;
+  background: #f7c95c;
+}
+
+@media (max-width: 42rem) {
+  .course-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .course-tabs > .myst-card {
+    min-height: 10rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .course-tabs > .myst-card {
+    transition: none;
+  }
+}
